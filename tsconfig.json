@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "isolatedModules": true,
+        "strictNullChecks": true,
+        "jsx": "react-jsx",
+        "jsxImportSource": "preact",
+        "noUncheckedIndexedAccess": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"]
+        }
+    },
+    "include": ["**/*.ts", "**/*.tsx", "**/*.astro"],
+    "exclude": ["node_modules"]
+}

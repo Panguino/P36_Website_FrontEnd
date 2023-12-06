@@ -1,0 +1,115 @@
+---
+const { title, description } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body>
+        <div class="all">
+            <slot />
+        </div>
+    </body>
+</html>
+<style is:global>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    html,
+    body {
+        height: 100%;
+        background: #fff;
+        color: #000;
+        overflow: visible;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        --font-primary: 'Inter', sans-serif;
+    }
+    * {
+        box-sizing: border-box;
+        font-family: var(--font-primary);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: var(--color-black);
+    }
+    .all {
+    }
+    a {
+    }
+    h1 {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 68px;
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+
+        @media (max-width: 1300px) {
+            font-size: 40px;
+            line-height: 42px;
+        }
+    }
+    h3 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+    }
+    h4 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 130%;
+    }
+    h5 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+    }
+    h6 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    p {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 30px;
+
+        @media (max-width: 750px) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+    ul,
+    ol {
+        margin: 0px;
+        padding: 20px 10px;
+    }
+    li {
+        margin: 0px 20px 5px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+
+        @media (max-width: 900px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    table {
+    }
+    input {
+    }
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+    }
+</style>

@@ -1,0 +1,69 @@
+{
+  "name": "bw_adwork_dynamic_landing",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Panguino/P36_Website_FrontEnd.git"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "optimize-images": "node imagemin.mjs",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.8.6",
+    "@astrojs/react": "^2.0.2",
+    "@nanostores/react": "^0.7.1",
+    "nanostores": "^0.9.5",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "astro": "^2.0.5",
+    "astro-seo-metadata": "^0.6.0",
+    "cloudinary-core": "^2.13.0",
+    "cloudinary-video-player": "^1.9.9",
+    "framer-motion": "^9.1.7",
+    "gsap": "^3.11.4",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-ga4": "^2.1.0",
+    "react-scroll": "^1.8.9",
+    "styled-components": "^5.3.10",
+    "styled-normalize": "^8.0.7",
+    "uuid": "^9.0.0",
+    "yup": "^1.1.1"
+  },
+  "devDependencies": {
+    "@astrojs/ts-plugin": "^1.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "imagemin": "^8.0.1",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-webp": "^8.0.0",
+    "prettier": "^2.8.3",
+    "prettier-eslint": "^15.0.1",
+    "replace-in-file": "^6.3.5",
+    "sass": "^1.58.0",
+    "stylelint": "^14.16.1",
+    "stylelint-config-recommended-scss": "^8.0.0",
+    "stylelint-config-standard": "^29.0.0"
+  },
+  "author": "Brad Larson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Panguino/P36_Website_FrontEnd/issues"
+  },
+  "homepage": "https://github.com/Panguino/P36_Website_FrontEnd#readme",
+  "engines": {
+    "node": "18",
+    "npm": "8"
+  }
+}

@@ -1,0 +1,13 @@
+---
+import Layout from '@/layouts/Layout.astro'
+
+import { Navigation } from '@/components/layout/Navigation/Navigation'
+import { Footer } from '@/components/layout/Footer/Footer'
+import { Hero } from '@/components/blocks/Hero/Hero'
+---
+
+<Layout title="Point 36 Academy" description="Microblading Academy and Training">
+    <Hero client:load />
+    <Footer client:load />
+    <Navigation client:load />
+</Layout>
